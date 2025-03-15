@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="chat-window" aria-label="Chat Window">
+        
+ 
+        <div class="chat-header">
+            <span class="back-button" aria-label="Go Back">←</span>
+            <img src="JoybotLogo.png" alt="Bot Avatar" class="bot-avatar">
+            <div>
+                <div class="title">AI Chatbot</div>
+                <div class="subtitle">How can I assist you?</div>
+            </div>
+        </div>
+
+        <div class="chat">
+            <div class="model">
+                <img src="JoybotLogo.png" alt="Bot Avatar" class="bot-avatar">
+                <p>
+                    Hello, Welcome to <b>JoyBot!</b> <b>Quezon City University's Assistant Bot!</b>
+                    You can ask me anything about the school, courses, and other information you need.
+                </p>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input placeholder="Ask me anything..." type="text" aria-label="Chat Input">
+            <button aria-label="Send Message">
+                <img src="send-icon.png" alt="Send">
+            </button>
+        </div>
+    </section>
+
+    <div class="chat-button" aria-label="Open Chat">
+        <img src="chat-icon.png" alt="Start Chat">
+    </div>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+    
+    <script type="module" src="main.js"></script>
+    
+</body>
+</html>
